@@ -30,7 +30,6 @@ namespace StarWarsWiki.TipoPagina.Navegacao
 
             try
             {
-
                 listaPessoas = new List<Pessoa>();
                 var RetornoPessoas = await pessoasServices.GetListaPessoasAsync(BuscaEnum.Generos.people);
 

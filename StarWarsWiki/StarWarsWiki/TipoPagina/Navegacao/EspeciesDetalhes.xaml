@@ -3,10 +3,66 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StarWarsWiki.TipoPagina.Navegacao.EspeciesDetalhes">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" Margin="20">
+
+            <Image x:Name="imgChoosed" HeightRequest="200" WidthRequest="200"></Image>
+            <StackLayout Orientation="Vertical" Margin="20">
+                <ActivityIndicator x:Name="activity"  
+                       IsVisible="True"  
+                       IsRunning="True"
+                       Color="Black"  
+                       BackgroundColor="Transparent"/>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nome:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Nome}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Classificação:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Classificacao}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Designação:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Designacao}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Altura média:" FontAttributes="Bold"/>
+                    <Label Text="{Binding AlturaMedia}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Cores de Pele:" FontAttributes="Bold"/>
+                    <Label Text="{Binding CoresDePele}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Cores de Cabelo:" FontAttributes="Bold"/>
+                    <Label Text="{Binding CoresDeCabelo}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Cores dos Olhos:" FontAttributes="Bold"/>
+                    <Label Text="{Binding CoresDeOlhos}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Vida Média:" FontAttributes="Bold"/>
+                    <Label Text="{Binding VidaMedia}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Planeta de Origem:" FontAttributes="Bold"/>
+                    <Label Text="{Binding PlanetaCasa}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Idioma:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Idioma}"/>
+                </StackLayout>
+                
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

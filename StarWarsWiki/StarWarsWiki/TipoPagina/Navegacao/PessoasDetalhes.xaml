@@ -3,10 +3,60 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StarWarsWiki.TipoPagina.Navegacao.PessoasDetalhes">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" Margin="20">
+
+            <Image x:Name="imgChoosed" HeightRequest="200" WidthRequest="200"></Image>
+            <StackLayout Orientation="Vertical" Margin="20">
+                <ActivityIndicator x:Name="activity"  
+                       IsVisible="True"  
+                       IsRunning="True"
+                       Color="Black"  
+                       BackgroundColor="Transparent"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nome:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Nome}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Altura:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Altura}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Peso:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Peso}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Cor do Cabelo:" FontAttributes="Bold"/>
+                    <Label Text="{Binding CorCabelo}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Cor da Pele:" FontAttributes="Bold"/>
+                    <Label Text="{Binding CorPele}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Cor dos Olhos:" FontAttributes="Bold"/>
+                    <Label Text="{Binding CorOlhos}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ano Nascimento:" FontAttributes="Bold"/>
+                    <Label Text="{Binding AnoNascimento}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Gênero:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Genero}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Planeta Natal:" FontAttributes="Bold"/>
+                    <Label Text="{Binding PlanetaNatal}"/>
+                </StackLayout>
+                
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

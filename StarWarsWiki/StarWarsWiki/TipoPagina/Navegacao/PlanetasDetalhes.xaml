@@ -3,10 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StarWarsWiki.TipoPagina.Navegacao.PlanetasDetalhes">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" Margin="20">
+
+            <Image x:Name="imgChoosed" HeightRequest="200" WidthRequest="200"></Image>
+            <StackLayout Orientation="Vertical" Margin="20">
+                <ActivityIndicator x:Name="activity"  
+                       IsVisible="True"  
+                       IsRunning="True"
+                       Color="Black"  
+                       BackgroundColor="Transparent"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nome:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Nome}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Período Rotação:" FontAttributes="Bold"/>
+                    <Label Text="{Binding PeriodoRotacao}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Peréodo Orbital:" FontAttributes="Bold"/>
+                    <Label Text="{Binding PeriodoOrbital}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Diâmetro:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Diametro}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Clima:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Clima}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Gravidade:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Gravidade}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Água Superfície:" FontAttributes="Bold"/>
+                    <Label Text="{Binding AguaSuperficie}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="População:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Populacao}"/>
+                </StackLayout>
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -31,7 +31,6 @@ namespace StarWarsWiki.TipoPagina.Navegacao
 
             try
             {
-
                 listaPlanetas = new List<Planeta>();
                 var RetornoPlanetas = await planetasServices.GetListaPlanetaAsync(BuscaEnum.Generos.planets);
 

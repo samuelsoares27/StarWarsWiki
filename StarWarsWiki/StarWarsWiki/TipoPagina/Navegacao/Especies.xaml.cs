@@ -30,7 +30,6 @@ namespace StarWarsWiki.TipoPagina.Navegacao
 
             try
             {
-
                 listaEspecies = new List<Especie>();
                 var RetornoEspecies = await especiesServices.GetListaEspecieAsync(BuscaEnum.Generos.species);
 

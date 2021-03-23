@@ -192,7 +192,7 @@ namespace StarWarsWiki.Services
                 switch (entrada)
                 {
                     case "people":
-                        pasta = "pessoas";
+                        pasta = "personagens";
                         break;
                     case "planets":
                         pasta = "planetas";

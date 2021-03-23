@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StarWarsWiki.TipoPagina.Navegacao.Veiculos"
-             Title="Star Wars Veículos">
+             Title="Star Wars Veículos"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
     <StackLayout>
         <ActivityIndicator x:Name="activity"  
                        IsVisible="True"  
@@ -10,15 +11,31 @@
                        Color="Black"  
                        BackgroundColor="Transparent"/>
         <ScrollView>
-            <ListView x:Name="ListaVeiculos" ItemsSource="{Binding listaVeiculos}" HasUnevenRows="True" ItemSelected="ItemSelecionadoAction">
+            <ListView x:Name="ListaVeiculos" ItemsSource="{Binding listaVeiculos}" 
+                      HasUnevenRows="True" ItemSelected="ItemSelecionadoAction" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <ViewCell.View>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height=".5*"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".5*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+       
                                 <StackLayout Margin="10" Orientation="Horizontal">
-                                    <Label Text="{ Binding Nome }" FontSize="15"></Label>
-                                </StackLayout>
-                            </ViewCell.View>
+                                        <pancake:PancakeView 
+                                            CornerRadius="10,10,10,10"
+                                            IsClippedToBounds="true"
+                                            HorizontalOptions="FillAndExpand"
+                                            HeightRequest="50"
+                                        BackgroundColor="Gray">
+                                            <Label Text="{ Binding Nome }" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"></Label>
+                                        </pancake:PancakeView>
+                                    </StackLayout>
+                       
+                            </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
