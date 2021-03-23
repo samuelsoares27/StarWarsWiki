@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarWarsWiki.TipoPagina.Navegacao.Planetas">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="activity"  
+                       IsVisible="True"  
+                       IsRunning="True"
+                       Color="Black"  
+                       BackgroundColor="Transparent"/>
+            <ScrollView>
+                <ListView x:Name="ListaPlanetas" ItemsSource="{Binding listaPlanetas}" HasUnevenRows="True" ItemSelected="ItemSelecionadoAction">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <StackLayout Margin="10" Orientation="Horizontal">
+                                        <Label Text="{ Binding Nome }" FontSize="15"></Label>
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

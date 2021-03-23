@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarWarsWiki.TipoPagina.Navegacao.VeiculosDetalhes"
+             Title="Detalhes do Veículo">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="20">
+
+            <Image x:Name="imgChoosed" HeightRequest="200" WidthRequest="200"></Image>
+            <StackLayout Orientation="Vertical" Margin="20">
+                <ActivityIndicator x:Name="activity"  
+                       IsVisible="True"  
+                       IsRunning="True"
+                       Color="Black"  
+                       BackgroundColor="Transparent"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nome:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Nome}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Modelo:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Modelo}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Fabricante:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Fabricante}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Custo em Créditos:" FontAttributes="Bold"/>
+                    <Label Text="{Binding CustoCreditos}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tamanho:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Tamanho}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Velocidade na Atmosfera:" FontAttributes="Bold"/>
+                    <Label Text="{Binding VelocidadeMaximaAtmosfera}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Equipe:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Equipe}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Passageiros:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Passageiros}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Capacidade de Carga:" FontAttributes="Bold"/>
+                    <Label Text="{Binding CapacidadeCarga}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Consumível:" FontAttributes="Bold"/>
+                    <Label Text="{Binding Consumivel}"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Classe Veículo:" FontAttributes="Bold"/>
+                    <Label Text="{Binding ClasseVeiculo}"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

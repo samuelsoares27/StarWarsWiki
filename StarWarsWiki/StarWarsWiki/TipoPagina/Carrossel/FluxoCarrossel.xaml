@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarWarsWiki.TipoPagina.Carrossel.FluxoCarrossel"
+             xmlns:PaginaCarrossel ="clr-namespace:StarWarsWiki.TipoPagina.Carrossel">
+
+    <PaginaCarrossel:CarrosselPage1/>
+    <PaginaCarrossel:CarrosselPage2/>
+    <PaginaCarrossel:CarrosselPage3/>
+</CarouselPage>

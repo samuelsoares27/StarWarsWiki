@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarWarsWiki.TipoPagina.Carrossel.CarrosselPage3"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="CenterAndExpand">
+            <Label Text="Você está pronto para embarcar em uma viagem inter espacial??"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   Padding="5, 5, 5, 5"
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="Medium"/>
+            <Button ImageSource="sw_imagem.png" Clicked="InicioApp" BackgroundColor="Transparent"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

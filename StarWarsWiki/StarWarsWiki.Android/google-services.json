@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "830910929617",
+    "project_id": "starwarswiki-45260",
+    "storage_bucket": "starwarswiki-45260.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830910929617:android:1e680db1b7a11345d003f0",
+        "android_client_info": {
+          "package_name": "com.companyname.starwarswiki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830910929617-3mqgs9sim48jnb6k4il2eij1nvpqnp6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD00JK0WtCYox2h2K7ZZlNVjWtO6V-rLNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830910929617-3mqgs9sim48jnb6k4il2eij1nvpqnp6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

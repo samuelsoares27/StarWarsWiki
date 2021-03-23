@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarWarsWiki.TipoPagina.Carrossel.CarrosselPage1"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="CenterAndExpand">
+            <Label Text="Bem vindo ao Star Wars Wiki"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   Padding="5, 5, 5, 5"
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="Medium"/>
+            <Image Source="sw_imagem.png" BackgroundColor="Transparent"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
